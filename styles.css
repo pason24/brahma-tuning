@@ -41,19 +41,15 @@ button {
   text-decoration: none;
 }
 
-::-webkit-scrollbar {
+.hide-scrollbar {
+  /*FireFox*/
+  scrollbar-width: none;
+  /*IE10+*/
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  /*Chrome, Safari, Edge*/
   display: none;
-}
-
-::-webkit-scrollbar-track {
-  background: rgb(77, 77, 77);
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(12, 12, 12, 1);
-}
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(18, 18, 18, 1);
 }
 
 .cbutton {
