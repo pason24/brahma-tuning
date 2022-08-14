@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 * {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
   font-family: "Bebas Neue", sans-serif;
   box-sizing: border-box;
   margin: 0;
@@ -41,14 +43,7 @@ button {
   text-decoration: none;
 }
 
-.hide-scrollbar {
-  /*FireFox*/
-  scrollbar-width: none;
-  /*IE10+*/
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-}
-.hide-scrollbar::-webkit-scrollbar {
-  /*Chrome, Safari, Edge*/
+::-webkit-scrollbar {
   display: none;
 }
 
