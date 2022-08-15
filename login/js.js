@@ -48,7 +48,7 @@ function getInfo() {
   var name = document.getElementById("a").value;
   for (i = 0; i < objDaten.length; i++) {
     if (name == objDaten[i].name && passwort == objDaten[i].passwort) {
-      window.location.replace("impressum.html");
+      window.location.replace("/index");
       return;
     }
   }
