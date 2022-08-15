@@ -11,12 +11,6 @@
             var time = new Date();
             var hours = time.getHours();
             var minutes = time.getMinutes();
-            if (hours > 12) {
-                hours = hours - 12;
-            }
-            if (hours == 0) {
-                hours = 12;
-            }
             document.getElementById("clock").innerHTML = hours + ":" + minutes;
         }
         setInterval(displayTime, 100);
