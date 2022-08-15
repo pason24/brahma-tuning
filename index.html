@@ -6,9 +6,15 @@
     <title>sus</title>
     <script>
         function displayTime() {
-            var time = new Date();
+            var time = new Date("1995-12-17T03:04:00");
             var hours = time.getHours();
+            if (hours < 10) {
+                hours = ('0' + hours).slice(-2);
+            }
             var minutes = time.getMinutes();
+            if (hours < 10) {
+                minutes = ('0' + minutes).slice(-2)
+            }
             document.getElementById("clock").innerHTML = hours + ":" + minutes;
         }
         setInterval(displayTime, 100);
