@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="test.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Test</title>
+    <script>
+        var number = 0;
+        function picture(number) {
+            if (number == 1) {
+                document.getElementById('cap1').style.display = 'block';
+                document.getElementById('cap2').style.display = 'none';
+                document.getElementById('cap3').style.display = 'none';
+            }
+            if (number == 2) {
+                document.getElementById('cap1').style.display = 'none';
+                document.getElementById('cap2').style.display = 'block';
+                document.getElementById('cap3').style.display = 'none';
+            }
+            if (number == 3) {
+                document.getElementById('cap1').style.display = 'none';
+                document.getElementById('cap2').style.display = 'none';
+                document.getElementById('cap3').style.display = 'block';
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li>
+                <a id="1" href="#" onmouseover="picture(1)">Quandale</a>
+            </li>
+            <li>
+                <a id="2" href="#" onmouseover="picture(2)">Dingle</a>
+            </li>
+            <li>
+                <a id=" 3" href="#" onmouseover="picture(3)">Gort</a>
+            </li>
+        </ul>
+    </header>
+    <div id="capcontain">
+        <img id="cap1"
+            src="https://cdn.shopify.com/s/files/1/0266/5817/7121/articles/capybara-nature-habitat-northern-pantanal_1200x1200.jpg?v=1631431267">
+        <img id="cap2"
+            src="https://zoo-live.rokka.io/twitter_card_large/99a81c516c1a76af66f65fb28a6d8f28ce584649/2244-0009628-0.jpg?itok=ENipDYwW">
+        <img id="cap3" src="https://www.das-tierlexikon.de/wp-content/uploads/wasserschwein-capybara.jpeg">
+    </div>
+</body>
+
+</html>
