@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 
+
+
 <head>
     <meta charset="utf-8">
     <title>sus</title>
@@ -12,7 +14,7 @@
                 hours = ('0' + hours).slice(-2);
             }
             var minutes = time.getMinutes();
-            if (hours < 10) {
+            if (minutes < 10) {
                 minutes = ('0' + minutes).slice(-2)
             }
             document.getElementById("clock").innerHTML = hours + ":" + minutes;
@@ -23,13 +25,12 @@
 </head>
 
 <body>
+    <div id="spacer"></div>
     <header>
         <nav>
             <ul class="nav_links">
                 <li>
-                    <p>
-                        <span id="clock">00:00</span>
-                    </p>
+                    <span id="clock">00:00</span>
                 </li>
                 <br>
                 <li><a href="./brahma/brahma">brahma</a></li>
@@ -40,11 +41,14 @@
             </ul>
         </nav>
     </header>
-    <footer>
-        <div id="fuss">
+    <div class="content">
+
+    </div>
+    <div id="footer">
+        <span>
             <a href="/impressum">Impressum</a><br><a href="/dse">Datenschutzerklärung </a>
-        </div>
-    </footer>
+        </span>
+    </div>
 </body>
 
 </html>

@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 * {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
   font-family: "Bebas Neue", sans-serif;
   box-sizing: border-box;
   margin: 0;
@@ -10,13 +12,23 @@
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  overflow-y: scroll;
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-weight: 400;
   background-color: rgb(255, 255, 255);
-}
-
-button.cbutton:hover {
-  background-color: rgba(200, 39, 46, 0.7);
+  align-items: stretch;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -29,27 +41,12 @@ header {
   padding: 0.5% 12vh;
 }
 
-html {
-  overflow-y: scroll;
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
 li,
 a,
 button {
   font-size: 150%;
   color: rgb(255, 255, 255);
   text-decoration: none;
-}
-
-::-webkit-scrollbar {
-  display: none;
 }
 
 .cbutton {
@@ -61,13 +58,9 @@ button {
   transition: all 0.3s ease 0s;
 }
 
-/*.content p {
-  color: rgb(168, 168, 168);
-  font-size: 40px;
-  display: inline-block;
-  text-align: left;
-  max-width: 95%;
-}                 NICHT GENUTZT */
+button.cbutton:hover {
+  background-color: rgba(200, 39, 46, 0.7);
+}
 
 .content {
   flex-wrap: wrap;
@@ -148,26 +141,8 @@ button {
   transform: scale(1.1);
 }
 
-/*.abschicken {
-  background-color: #4caf50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 100px;
-  cursor: pointer;
-}*/
-
-#alwaysonbottom {
-  align-items: stretch;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
 #footer {
-  margin-top: 1%;
+  padding-top: 0.5%;
   padding-top: 0.5%;
   z-index: 13301;
   width: 100vw;
