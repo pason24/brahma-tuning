@@ -8,16 +8,11 @@
     <title>sus</title>
     <script>
         function displayTime() {
-            var time = new Date();
-            var hours = time.getHours();
-            var minutes = time.getMinutes();
-            if (hours > 12) {
-                hours = hours - 12;
-            }
-            if (hours == 0) {
-                hours = 12;
-            }
-            document.getElementById("clock").innerHTML = hours + ":" + minutes;
+            var date = new Date(parseInt(time));
+  return date.toLocaleTimeString(navigator.language, {
+    hour: '2-digit',
+    minute:'2-digit'
+  });
         }
         setInterval(displayTime, 100);
     </script>
@@ -30,7 +25,9 @@
             <ul class="nav_links">
                 <li>
                     <p>
-                        <span id="clock">00</span>
+                        <span id="hours">00</span>
+                        <span>:</span>
+                        <span id="minutes">00</span>
                     </p>
                 </li><br>
                 <li><a href="./brahma">brahma</a></li>
