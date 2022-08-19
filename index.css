@@ -36,6 +36,9 @@ body {
 
 header {
   max-height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   width: 100%;
   margin-top: 3vh;
@@ -82,6 +85,8 @@ a {
 }
 
 #footer {
+  display: flex;
+  justify-content: center;
   padding-top: 0.5%;
   padding-bottom: 0.5%;
   z-index: 13301;
