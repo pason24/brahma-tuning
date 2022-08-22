@@ -33,29 +33,31 @@ body {
 }
 
 header {
-  background-color: rgb(77, 77, 77);
+  background-color: rgba(255, 255, 255, 1);
   max-height: 10vh;
+  min-height: 10vh;
   width: 100vw;
   position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1vh 5vw;
+  padding: 0vh 5vw;
 }
 
 li,
 a,
 button {
   font-size: 150%;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
 .cbutton {
-  padding: 15% 15%;
+  max-height: 15vw;
+  width: 15vw;
   background-color: rgba(200, 39, 46, 1);
   border: none;
-  border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+  border-radius: 5vh;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
@@ -65,10 +67,9 @@ button.cbutton:hover {
 }
 
 .content {
-  flex-wrap: wrap;
   flex-grow: 1;
   z-index: 100;
-  padding-top: 7%;
+  margin-top: 10vh;
   text-align: center;
 }
 
@@ -101,11 +102,11 @@ button.cbutton:hover {
 }
 
 .logo {
+  min-height: 10vh;
+  max-height: 10vh;
   transition: all 0.3s ease 0s;
-  margin-top: 8%;
   justify-content: space-between;
   cursor: pointer;
-  height: 5vh;
 }
 
 .logo:hover {
@@ -145,7 +146,7 @@ button.cbutton:hover {
 }
 
 #footer {
-  padding-top: 0.5%;
+  padding-top: 0.5v;
   padding-top: 0.5%;
   z-index: 13301;
   width: 100vw;
